@@ -179,7 +179,11 @@ const nodes = [
       philosophers: 'David Chalmers (1995, 1996)',
       thesis: 'Why and how do physical processes give rise to subjective experience (phenomenal consciousness / qualia)? The "easy problems" concern explaining cognitive functions (discrimination, reporting, attention). The "hard problem" asks why there is "something it is like" to have those processes.',
       premises: ['Functional/behavioral explanations address the "easy problems" but leave the subjective dimension unexplained', 'Even a complete functional account of the brain would leave open why it feels like something', 'The explanatory gap between objective processes and subjective experience is the core puzzle'],
-      consequence: 'Every theory of consciousness must either solve, dissolve, or explain away the hard problem.'
+      consequence: 'Every theory of consciousness must either solve, dissolve, or explain away the hard problem.',
+      links: [
+        { label: 'SEP: The Hard Problem', url: 'https://plato.stanford.edu/entries/consciousness/#HarP' },
+        { label: 'Chalmers (1995) original paper', url: 'https://consc.net/papers/facing.html' },
+      ]
     }
   },
   {
@@ -190,7 +194,10 @@ const nodes = [
       philosophers: 'David Chalmers (1996)',
       thesis: 'A philosophical zombie -- a being physically and functionally identical to a conscious human but lacking subjective experience -- is conceivable. If conceivable, it is metaphysically possible. If possible, then consciousness is not entailed by physical facts alone.',
       premises: ['P1: We can coherently conceive of a zombie duplicate', 'P2: Conceivability entails metaphysical possibility (controversial)', 'P3: If zombies are possible, physicalism is false'],
-      consequence: 'This is the most influential argument against physicalist theories of consciousness.'
+      consequence: 'This is the most influential argument against physicalist theories of consciousness.',
+      links: [
+        { label: 'SEP: Zombies', url: 'https://plato.stanford.edu/entries/zombies/' },
+      ]
     }
   },
   {
@@ -201,6 +208,9 @@ const nodes = [
       philosophers: 'Daniel Dennett (1995), Eric Marcus (2004)',
       thesis: 'We cannot actually coherently conceive of zombies. We only think we can because we have an impoverished understanding of what physical processes entail. Conceivability does not reliably track metaphysical possibility.',
       premises: ['The conceivability-possibility link is unreliable (e.g., Goldbach zombies)', 'We lack the cognitive resources to fully conceive what physical identity entails', 'Zombies may be "prima facie" but not "ideally" conceivable'],
+      links: [
+        { label: 'Dennett - Quining Qualia', url: 'https://ase.tufts.edu/cogstud/dennett/papers/quinqual.htm' },
+      ]
     }
   },
   {
@@ -211,7 +221,10 @@ const nodes = [
       philosophers: 'Joseph Levine (1983)',
       thesis: 'Even if consciousness IS identical to brain states, we cannot explain WHY a particular brain state feels a particular way. There is an explanatory gap between physical descriptions and phenomenal qualities, even if there is no ontological gap.',
       premises: ['We can explain why water = H2O via its causal/functional role', 'We cannot similarly explain why C-fiber firing = pain', 'The identity may hold, but it remains brute and unexplained'],
-      note: 'Levine is careful: the explanatory gap does not necessarily entail an ontological gap.'
+      note: 'Levine is careful: the explanatory gap does not necessarily entail an ontological gap.',
+      links: [
+        { label: 'SEP: The Explanatory Gap', url: 'https://plato.stanford.edu/entries/consciousness/#ExpGap' },
+      ]
     }
   },
   {
@@ -222,7 +235,11 @@ const nodes = [
       philosophers: 'Frank Jackson (1982, 1986)',
       thesis: 'Mary, a brilliant neuroscientist confined to a black-and-white room, knows all physical facts about color vision. When she sees red for the first time, she learns something new: what it is LIKE to see red. Therefore, physical facts do not exhaust all facts.',
       premises: ['P1: Mary knows all physical facts about color', 'P2: Upon seeing red, she learns something new', 'P3: Therefore there are non-physical facts (qualia)'],
-      note: 'Jackson himself later rejected this argument and became a physicalist.'
+      note: 'Jackson himself later rejected this argument and became a physicalist.',
+      links: [
+        { label: 'SEP: Qualia - The Knowledge Argument', url: 'https://plato.stanford.edu/entries/qualia-knowledge/' },
+        { label: 'Jackson (1982) original paper', url: 'https://en.wikipedia.org/wiki/Knowledge_argument' },
+      ]
     }
   },
   {
@@ -233,6 +250,9 @@ const nodes = [
       philosophers: 'David Lewis (1988), Laurence Nemirow (1990)',
       thesis: 'When Mary sees red, she does not learn a new fact. She gains new abilities: the ability to recognize, imagine, and remember red. Knowledge-how is not knowledge-that.',
       premises: ['Knowing what red looks like = knowing how to recognize/imagine it', 'Abilities are not propositional knowledge', 'No new facts are learned, so physicalism is safe'],
+      links: [
+        { label: 'SEP: The Ability Hypothesis', url: 'https://plato.stanford.edu/entries/qualia-knowledge/#AbilHypo' },
+      ]
     }
   },
 
@@ -245,7 +265,12 @@ const nodes = [
       philosophers: 'Bernard Baars (1988), Stanislas Dehaene & Jean-Pierre Changeux (2011)',
       thesis: 'Consciousness arises when information is broadcast globally across the brain via a "global workspace." Unconscious processing occurs in specialized, modular processors. When information wins a competition for access to the workspace, it becomes available to many brain systems simultaneously (working memory, planning, verbal report) -- and this global availability IS consciousness.',
       premises: ['The brain has many parallel, unconscious specialist processors', 'A "global workspace" (prefrontal-parietal network) integrates and broadcasts selected information', 'Information becomes conscious when it is globally broadcast and available to multiple subsystems'],
-      example: 'In the attentional blink paradigm, stimuli that fail to enter the workspace remain unconscious despite being processed by early visual areas.'
+      example: 'In the attentional blink paradigm, stimuli that fail to enter the workspace remain unconscious despite being processed by early visual areas.',
+      links: [
+        { label: 'SEP: Global Workspace Theory', url: 'https://plato.stanford.edu/entries/consciousness-neuroscience/#GlobWorkTheo' },
+        { label: 'Baars - Global Workspace Theory overview', url: 'https://en.wikipedia.org/wiki/Global_workspace_theory' },
+        { label: 'Dehaene - Consciousness and the Brain (book)', url: 'https://www.goodreads.com/book/show/18079692-consciousness-and-the-brain' },
+      ]
     }
   },
   {
@@ -256,6 +281,9 @@ const nodes = [
       philosophers: 'Dehaene, Changeux, Naccache (2006)',
       thesis: 'When a stimulus becomes conscious, there is a sudden, nonlinear "ignition" of sustained activity in prefrontal and parietal cortex, accompanied by the P3b ERP component and increased long-range synchrony.',
       premises: ['Subliminal stimuli activate local processors but no global ignition', 'Conscious percepts show late (300ms+) widespread cortical activation', 'This all-or-none ignition pattern matches the workspace broadcasting prediction'],
+      links: [
+        { label: 'Dehaene et al. (2006) - Conscious, preconscious, and subliminal processing', url: 'https://pubmed.ncbi.nlm.nih.gov/17088211/' },
+      ]
     }
   },
   {
@@ -266,7 +294,10 @@ const nodes = [
       philosophers: 'Ned Block (2007), Chalmers (2010)',
       thesis: 'GWT explains "access consciousness" (availability for report/reasoning) but not "phenomenal consciousness" (what it is like). Broadcasting explains function, not subjective feel.',
       premises: ['Access consciousness != phenomenal consciousness (Block\'s distinction)', 'A zombie brain could broadcast information globally without any subjective experience', 'GWT conflates the mechanisms of reportability with the essence of experience'],
-      consequence: 'GWT may be a theory of access consciousness only, not a complete theory of consciousness.'
+      consequence: 'GWT may be a theory of access consciousness only, not a complete theory of consciousness.',
+      links: [
+        { label: 'Block (2007) - Consciousness, accessibility, and the mesh', url: 'https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/BlockBBS.pdf' },
+      ]
     }
   },
   {
@@ -277,6 +308,9 @@ const nodes = [
       philosophers: 'Dehaene (2014), Dennett (2005)',
       thesis: 'Once you fully explain all the functional and cognitive aspects of consciousness (reportability, integration, access), there is nothing left to explain. The "hard problem" is a residual illusion created by dualist intuitions.',
       premises: ['Every aspect of what we call "experience" can be functionally decomposed', 'The intuition that something is left over after functional explanation is itself a cognitive artifact', 'Explaining access IS explaining consciousness'],
+      links: [
+        { label: 'Dennett (2005) - Sweet Dreams', url: 'https://en.wikipedia.org/wiki/Sweet_Dreams_(book)' },
+      ]
     }
   },
 
@@ -289,7 +323,13 @@ const nodes = [
       philosophers: 'Giulio Tononi (2004, 2008), Tononi & Koch (2015)',
       thesis: 'Consciousness is identical to integrated information (Phi). A system is conscious to the degree that it is both differentiated (many possible states) and integrated (the whole generates more information than its parts). Phi quantifies how much a system is "more than the sum of its parts."',
       premises: ['Axiom 1 (Intrinsic existence): Consciousness exists from the intrinsic perspective', 'Axiom 2 (Composition): Consciousness is structured', 'Axiom 3 (Information): Consciousness is specific/differentiated', 'Axiom 4 (Integration): Consciousness is unified', 'Axiom 5 (Exclusion): Consciousness is definite'],
-      note: 'IIT starts from the phenomenology (axioms about experience) and derives physical requirements (postulates).'
+      note: 'IIT starts from the phenomenology (axioms about experience) and derives physical requirements (postulates).',
+      links: [
+        { label: 'SEP: Integrated Information Theory', url: 'https://plato.stanford.edu/entries/consciousness-neuroscience/#InteInfoTheo' },
+        { label: 'IIT official site', url: 'https://integratedinformationtheory.org/' },
+        { label: 'Tononi (2008) - Consciousness as Integrated Information', url: 'https://pubmed.ncbi.nlm.nih.gov/19081372/' },
+        { label: 'Wikipedia: IIT', url: 'https://en.wikipedia.org/wiki/Integrated_information_theory' },
+      ]
     }
   },
   {
@@ -300,7 +340,10 @@ const nodes = [
       philosophers: 'Tononi (2004)',
       thesis: 'Phi measures the amount of integrated information generated by a system above and beyond its parts. High Phi = high consciousness. Phi = 0 means no consciousness.',
       premises: ['Partition the system into parts in the way that makes the least difference (minimum information partition)', 'Phi = the information lost when the system is "cut" at this partition', 'The cerebellum has low Phi (modular) despite many neurons; cortex has high Phi (integrated)'],
-      note: 'Computing Phi exactly is intractable for large systems -- a major practical limitation.'
+      note: 'Computing Phi exactly is intractable for large systems -- a major practical limitation.',
+      links: [
+        { label: 'Tononi (2004) - An information integration theory of consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/15538121/' },
+      ]
     }
   },
   {
@@ -311,7 +354,10 @@ const nodes = [
       philosophers: 'Tononi & Koch (2015), recognized by proponents',
       thesis: 'Since any system with Phi > 0 has some consciousness, even simple systems (thermostats, photodiodes) have a tiny degree of experience. IIT proponents embrace this as a feature, not a bug.',
       premises: ['A single photodiode has Phi > 0 (it integrates information, however minimally)', 'Therefore it has a minimal form of experience', 'Consciousness is a graded, fundamental property of physical systems'],
-      consequence: 'Critics see this as a reductio ad absurdum; proponents see it as an elegant solution to the hard problem.'
+      consequence: 'Critics see this as a reductio ad absurdum; proponents see it as an elegant solution to the hard problem.',
+      links: [
+        { label: 'Koch - Is Consciousness Universal?', url: 'https://www.scientificamerican.com/article/is-consciousness-universal/' },
+      ]
     }
   },
   {
@@ -322,6 +368,9 @@ const nodes = [
       philosophers: 'Tegmark (2016), Barrett & Seth (2011)',
       thesis: 'Computing Phi for real neural systems is computationally intractable (worse than NP-hard). This makes IIT effectively unfalsifiable for complex systems.',
       premises: ['Exact Phi computation scales super-exponentially with system size', 'Proxy measures exist but their relationship to true Phi is unclear', 'A theory that cannot be measured cannot be tested'],
+      links: [
+        { label: 'Tegmark (2016) - Improved measures of integrated information', url: 'https://arxiv.org/abs/1601.02626' },
+      ]
     }
   },
   {
@@ -332,7 +381,10 @@ const nodes = [
       philosophers: 'Scott Aaronson (2014)',
       thesis: 'A simple 2D grid of logic gates, with no interesting computation, can be constructed to have arbitrarily high Phi. This means Phi does not track consciousness -- it tracks a mathematical property unrelated to cognition.',
       premises: ['Construct a planar network of XOR gates arranged in a grid', 'This has extremely high Phi by IIT\'s definition', 'Yet intuitively, such a grid is not "more conscious" than the human brain'],
-      consequence: 'Phi may be measuring the wrong thing entirely.'
+      consequence: 'Phi may be measuring the wrong thing entirely.',
+      links: [
+        { label: 'Aaronson blog post on IIT', url: 'https://scottaaronson.blog/?p=1799' },
+      ]
     }
   },
   {
@@ -343,7 +395,10 @@ const nodes = [
       philosophers: 'Tononi (2012), Oizumi, Albantakis & Tononi (2014)',
       thesis: 'IIT 3.0+ refines Phi with the exclusion postulate: only the system with maximal Phi over the "right" spatiotemporal grain exists as a conscious entity. This rules out some pathological cases.',
       premises: ['Only the maximum of integrated information (MICS) counts', 'Overlapping systems: only the one with highest Phi is conscious', 'This prevents double-counting and handles some grid objections'],
-      note: 'Critics argue this is ad hoc and the fundamental issue remains.'
+      note: 'Critics argue this is ad hoc and the fundamental issue remains.',
+      links: [
+        { label: 'Oizumi, Albantakis & Tononi (2014)', url: 'https://pubmed.ncbi.nlm.nih.gov/24776564/' },
+      ]
     }
   },
 
@@ -356,7 +411,11 @@ const nodes = [
       philosophers: 'David Rosenthal (1986, 2005)',
       thesis: 'A mental state is conscious when it is the object of a higher-order thought (HOT) -- i.e., when you have a thought ABOUT that mental state. Consciousness requires meta-representation: thinking about your own thinking.',
       premises: ['A mental state can exist without being conscious (unconscious perception)', 'What makes a state conscious is a higher-order representation of it', 'The HOT must be non-inferential and occur roughly simultaneously with the first-order state'],
-      example: 'You see red (first-order state). You are conscious of seeing red because you have a thought "I am seeing red" (higher-order thought).'
+      example: 'You see red (first-order state). You are conscious of seeing red because you have a thought "I am seeing red" (higher-order thought).',
+      links: [
+        { label: 'SEP: Higher-Order Theories', url: 'https://plato.stanford.edu/entries/consciousness-higher/' },
+        { label: 'Wikipedia: Higher-order theories of consciousness', url: 'https://en.wikipedia.org/wiki/Higher-order_theories_of_consciousness' },
+      ]
     }
   },
   {
@@ -367,7 +426,10 @@ const nodes = [
       philosophers: 'David Armstrong (1968), William Lycan (1996)',
       thesis: 'Consciousness arises from an inner perception or monitoring mechanism -- an "inner sense" that perceives one\'s own mental states, analogous to how outer senses perceive the world.',
       premises: ['There is an inner scanner/monitor that perceives first-order states', 'This inner perception is quasi-perceptual, not conceptual/thought-like', 'Conscious states are those being monitored by this inner sense'],
-      note: 'Differs from HOT: the higher-order state is perceptual, not conceptual.'
+      note: 'Differs from HOT: the higher-order state is perceptual, not conceptual.',
+      links: [
+        { label: 'SEP: Higher-Order Perception', url: 'https://plato.stanford.edu/entries/consciousness-higher/#HigOrdPerThe' },
+      ]
     }
   },
   {
@@ -378,7 +440,10 @@ const nodes = [
       philosophers: 'Ned Block (2011), Alex Byrne (1997)',
       thesis: 'If a HOT can misrepresent -- you have a thought "I see red" when there is no red experience -- then by HOT theory, you are conscious of seeing red when you aren\'t seeing red at all. This seems absurd.',
       premises: ['HOTs, like all representations, can misfire', 'A targetless HOT (no first-order state) should still produce consciousness on HOT theory', 'This means consciousness can be about nothing -- which seems wrong'],
-      consequence: 'Either HOTs cannot misrepresent (implausible) or HOT theory has a serious structural flaw.'
+      consequence: 'Either HOTs cannot misrepresent (implausible) or HOT theory has a serious structural flaw.',
+      links: [
+        { label: 'Block (2011) - The higher order approach to consciousness is defunct', url: 'https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/Block-The-HOT-approach-is-defunct.pdf' },
+      ]
     }
   },
   {
@@ -389,6 +454,9 @@ const nodes = [
       philosophers: 'David Rosenthal (2005)',
       thesis: 'Yes, a targetless HOT does produce a genuine conscious experience -- and this is correct, not absurd. Think of phantom limb pain: there is a conscious experience of pain with no actual tissue damage. Consciousness tracks the representation, not reality.',
       premises: ['Phantom limb pain is real phenomenal experience', 'Charles Bonnet syndrome: visual hallucinations are conscious experiences without external stimuli', 'Consciousness is determined by the representing state, not by what is represented'],
+      links: [
+        { label: 'Rosenthal (2005) - Consciousness and Mind', url: 'https://en.wikipedia.org/wiki/David_Rosenthal_(philosopher)' },
+      ]
     }
   },
   {
@@ -399,6 +467,9 @@ const nodes = [
       philosophers: 'Classical objection, discussed by Rosenthal',
       thesis: 'If a state is conscious only if represented by a HOT, then is the HOT itself conscious? If so, it needs a third-order thought, and so on ad infinitum.',
       premises: ['State S1 needs HOT about S1 to be conscious', 'Is the HOT itself conscious? If so, need a HOT about the HOT', 'This generates an infinite regress'],
+      links: [
+        { label: 'SEP: Infinite Regress Problem', url: 'https://plato.stanford.edu/entries/consciousness-higher/#InfRegObj' },
+      ]
     }
   },
   {
@@ -409,6 +480,9 @@ const nodes = [
       philosophers: 'Rosenthal (2005)',
       thesis: 'The higher-order thought that makes a first-order state conscious is itself typically unconscious. It does not need to be conscious to do its work. The regress stops at level 2.',
       premises: ['A HOT makes its TARGET conscious, not itself', 'The HOT is only conscious if there is a yet-higher thought about it (rare)', 'No regress: unconscious HOTs are the typical case'],
+      links: [
+        { label: 'SEP: Rosenthal\'s Response', url: 'https://plato.stanford.edu/entries/consciousness-higher/#InfRegObj' },
+      ]
     }
   },
 
@@ -421,7 +495,11 @@ const nodes = [
       philosophers: 'Victor Lamme (2006, 2010)',
       thesis: 'Consciousness arises from recurrent (feedback) processing between brain areas, not from feedforward processing alone. When sensory signals are fed forward through the visual hierarchy, processing is unconscious. When signals recur back from higher to lower areas, phenomenal experience emerges.',
       premises: ['Feedforward processing = unconscious feature extraction', 'Local recurrent processing (within visual cortex) = phenomenal experience', 'Widespread recurrent processing (including frontal areas) = access consciousness and reportability'],
-      example: 'In visual masking, a briefly flashed stimulus is processed feedforward but masking disrupts recurrence -- and the percept vanishes.'
+      example: 'In visual masking, a briefly flashed stimulus is processed feedforward but masking disrupts recurrence -- and the percept vanishes.',
+      links: [
+        { label: 'Lamme (2006) - Towards a true neural stance on consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/16546268/' },
+        { label: 'Wikipedia: Recurrent Processing Theory', url: 'https://en.wikipedia.org/wiki/Recurrent_models_of_visual_perception' },
+      ]
     }
   },
   {
@@ -432,6 +510,9 @@ const nodes = [
       philosophers: 'Lamme & Roelfsema (2000), Pascual-Leone & Walsh (2001)',
       thesis: 'TMS applied to V1 after ~100ms (disrupting recurrent signals from higher areas back to V1) eliminates conscious perception of a stimulus, even though feedforward processing had already occurred.',
       premises: ['TMS to V1 at 100ms post-stimulus abolishes awareness', 'Feedforward responses in V1 at 40-60ms are unaffected', 'This dissociates feedforward (unconscious) from recurrent (conscious) processing'],
+      links: [
+        { label: 'Lamme & Roelfsema (2000)', url: 'https://pubmed.ncbi.nlm.nih.gov/10997512/' },
+      ]
     }
   },
   {
@@ -454,7 +535,12 @@ const nodes = [
       philosophers: 'Michael Graziano (2013, 2019)',
       thesis: 'The brain constructs a simplified model (schema) of its own attention processes. This "attention schema" is what gives rise to the subjective sense of awareness. Just as the body schema models the body, the attention schema models attention -- and this model IS what we call consciousness.',
       premises: ['The brain uses internal models (schemas) of body, others\' minds, etc.', 'Attention is a real brain process of signal enhancement/selection', 'The brain builds a simplified, slightly inaccurate model of this attention process', 'This model attributes to itself a non-physical "awareness" -- which is the origin of the hard problem'],
-      example: 'When you report "I am aware of the apple," your brain is running an attention schema that models its own attention to the apple representation.'
+      example: 'When you report "I am aware of the apple," your brain is running an attention schema that models its own attention to the apple representation.',
+      links: [
+        { label: 'Graziano - Attention Schema Theory (lab page)', url: 'https://grazianolab.princeton.edu/research/attention-schema-theory' },
+        { label: 'Graziano (2013) - Consciousness and the Social Brain (book)', url: 'https://www.goodreads.com/book/show/17349084-consciousness-and-the-social-brain' },
+        { label: 'Wikipedia: Attention Schema Theory', url: 'https://en.wikipedia.org/wiki/Attention_schema_theory' },
+      ]
     }
   },
   {
@@ -465,6 +551,9 @@ const nodes = [
       philosophers: 'Graziano (2013)',
       thesis: 'The same machinery that models one\'s own attention also models others\' attention. This explains why we attribute consciousness to others, to animals, and even to simple objects that "seem to be looking at" things.',
       premises: ['Theory of mind = attention schema applied to others', 'We attribute awareness to things that seem to attend (e.g., a robot that tracks you)', 'This unifies self-awareness and social cognition under one mechanism'],
+      links: [
+        { label: 'Graziano & Webb (2015) - The attention schema theory', url: 'https://pubmed.ncbi.nlm.nih.gov/25957466/' },
+      ]
     }
   },
   {
@@ -487,7 +576,13 @@ const nodes = [
       philosophers: 'Karl Friston (2010), Andy Clark (2013, 2016), Jakob Hohwy (2013), Anil Seth (2021)',
       thesis: 'The brain is a prediction machine that constantly generates models of incoming sensory data and updates them based on prediction errors. Conscious experience is the brain\'s "best guess" -- its top-down generative model of the causes of sensory signals. The "controlled hallucination" view.',
       premises: ['The brain generates top-down predictions of sensory input', 'Prediction errors (mismatches) propagate upward to update the model', 'Consciousness = the content of the dominant generative model', 'Perception is controlled hallucination: we experience predictions, not raw data'],
-      example: 'Visual illusions occur when the brain\'s predictions override sensory input -- showing that perception is model-based.'
+      example: 'Visual illusions occur when the brain\'s predictions override sensory input -- showing that perception is model-based.',
+      links: [
+        { label: 'SEP: Predictive Processing', url: 'https://plato.stanford.edu/entries/perception-bayesian/' },
+        { label: 'Seth (2021) - Being You (book)', url: 'https://www.goodreads.com/book/show/53036818-being-you' },
+        { label: 'Clark (2013) - Whatever next? Predictive brains', url: 'https://pubmed.ncbi.nlm.nih.gov/23664817/' },
+        { label: 'Wikipedia: Predictive coding', url: 'https://en.wikipedia.org/wiki/Predictive_coding' },
+      ]
     }
   },
   {
@@ -498,6 +593,10 @@ const nodes = [
       philosophers: 'Anil Seth (2021)',
       thesis: 'Emotional and bodily consciousness arises from predictive models of the body\'s interior (interoception). The sense of being a self is the brain\'s prediction of its own body\'s physiological state. We are "beast machines" -- conscious because we predict our own aliveness.',
       premises: ['Interoceptive predictions generate moods, emotions, sense of self', 'The experience of "being me" = a deep predictive model of bodily regulation', 'This grounds consciousness in biological self-regulation, not abstract computation'],
+      links: [
+        { label: 'Seth - Being You (book)', url: 'https://www.goodreads.com/book/show/53036818-being-you' },
+        { label: 'Seth TED talk: Your brain hallucinates your conscious reality', url: 'https://www.youtube.com/watch?v=lyu7v7nWzfo' },
+      ]
     }
   },
   {
@@ -520,7 +619,12 @@ const nodes = [
       philosophers: 'Keith Frankish (2016), Daniel Dennett (1991, 2005)',
       thesis: 'Phenomenal consciousness -- the supposedly intrinsic, ineffable, private qualities of experience (qualia) -- does not exist as we conceive it. Our introspective reports systematically misrepresent our internal states, creating the ILLUSION of qualia. The hard problem is hard only because it asks us to explain something that doesn\'t exist.',
       premises: ['Introspection is a form of self-modeling that can be systematically wrong', 'We have "quasi-phenomenal" properties -- physical states that we REPRESENT as having qualia', 'The task is to explain why we THINK there is phenomenal consciousness, not to explain phenomenal consciousness itself'],
-      consequence: 'Dissolves the hard problem by denying its presupposition.'
+      consequence: 'Dissolves the hard problem by denying its presupposition.',
+      links: [
+        { label: 'Frankish (2016) - Illusionism as a Theory of Consciousness', url: 'https://keithfrankish.github.io/articles/Frankish_Illusionism%20as%20a%20theory%20of%20consciousness_eprint.pdf' },
+        { label: 'Dennett (1991) - Consciousness Explained (book)', url: 'https://en.wikipedia.org/wiki/Consciousness_Explained' },
+        { label: 'Wikipedia: Illusionism (philosophy of mind)', url: 'https://en.wikipedia.org/wiki/Illusionism_(philosophy_of_mind)' },
+      ]
     }
   },
   {
@@ -531,7 +635,10 @@ const nodes = [
       philosophers: 'Galen Strawson (2018), John Searle (1997)',
       thesis: '"Consciousness is the one thing that cannot be an illusion, because an illusion IS a conscious experience." If you have the illusion of pain, you are in pain. Illusionism is the most radical position in all of philosophy.',
       premises: ['An illusion of X requires a conscious subject having the illusion', 'The illusion of phenomenal consciousness presupposes phenomenal consciousness', 'Strawson: "illusionism is the silliest claim ever made"'],
-      consequence: 'If the objection holds, illusionism is self-refuting.'
+      consequence: 'If the objection holds, illusionism is self-refuting.',
+      links: [
+        { label: 'Strawson (2018) - The Consciousness Deniers', url: 'https://www.nybooks.com/daily/2018/03/13/the-consciousness-deniers/' },
+      ]
     }
   },
   {
@@ -542,6 +649,9 @@ const nodes = [
       philosophers: 'Keith Frankish (2016)',
       thesis: 'The illusion of phenomenal redness does not require actual phenomenal redness, just as the illusion of a bent stick does not require an actual bent stick. There are real internal states (quasi-phenomenal properties) that our introspection mischaracterizes as having qualia.',
       premises: ['Illusions of X do not require X to exist', 'There is something happening (quasi-phenomenal states) -- it just isn\'t what we think it is', 'The explanatory target shifts to: why does introspection misrepresent internal states?'],
+      links: [
+        { label: 'Frankish - Illusionism as a Theory of Consciousness', url: 'https://keithfrankish.github.io/articles/Frankish_Illusionism%20as%20a%20theory%20of%20consciousness_eprint.pdf' },
+      ]
     }
   },
 
@@ -554,7 +664,11 @@ const nodes = [
       philosophers: 'John Searle (1980, 1992)',
       thesis: 'Consciousness is a biological phenomenon caused by neuronal processes, just as digestion is caused by stomach processes. It is not reducible to computation or functional organization. The specific biology matters.',
       premises: ['Consciousness is caused by lower-level neuronal processes', 'It is realized in the brain as a system-level feature', 'It cannot be duplicated by mere computation (as argued by the Chinese Room)', 'It is "ontologically subjective" but "epistemically objective"'],
-      consequence: 'Rejects both dualism and computational functionalism.'
+      consequence: 'Rejects both dualism and computational functionalism.',
+      links: [
+        { label: 'SEP: Biological Naturalism', url: 'https://plato.stanford.edu/entries/chinese-room/#SearBiolNatu' },
+        { label: 'Wikipedia: Biological naturalism', url: 'https://en.wikipedia.org/wiki/Biological_naturalism' },
+      ]
     }
   },
   {
@@ -565,6 +679,10 @@ const nodes = [
       philosophers: 'John Searle (1980)',
       thesis: 'A person in a room follows rules to manipulate Chinese symbols, producing correct Chinese outputs from Chinese inputs. To outside observers, the room "understands" Chinese. But the person inside understands nothing. Therefore, computation (syntax) is insufficient for understanding (semantics) and consciousness.',
       premises: ['P1: Programs are purely syntactic (formal symbol manipulation)', 'P2: Human minds have semantic content (meaning, understanding)', 'P3: Syntax alone is insufficient for semantics', 'Conclusion: Programs cannot produce minds/consciousness'],
+      links: [
+        { label: 'SEP: The Chinese Room Argument', url: 'https://plato.stanford.edu/entries/chinese-room/' },
+        { label: 'Searle (1980) - Minds, Brains and Programs', url: 'https://en.wikipedia.org/wiki/Chinese_room' },
+      ]
     }
   },
   {
@@ -575,6 +693,9 @@ const nodes = [
       philosophers: 'Various (Berkeley AI Lab, etc.)',
       thesis: 'The person in the room doesn\'t understand Chinese, but the SYSTEM as a whole (person + rules + paper + room) does. Searle is confusing a part of the system with the whole system.',
       premises: ['Neurons individually don\'t understand Chinese either', 'Understanding is a system-level property', 'You can\'t localize understanding to a single component'],
+      links: [
+        { label: 'SEP: Systems Reply', url: 'https://plato.stanford.edu/entries/chinese-room/#SystRepl' },
+      ]
     }
   },
 
@@ -587,7 +708,12 @@ const nodes = [
       philosophers: 'Philip Goff (2019), Galen Strawson (2006), David Chalmers (sympathetic), Hedda Hassel Morch',
       thesis: 'Consciousness (or proto-consciousness) is a fundamental and ubiquitous feature of physical reality. All matter has some form of experiential quality. Human consciousness is built from the combination of these micro-level experiential properties.',
       premises: ['Physics describes matter\'s relational/structural properties but not its intrinsic nature', 'Consciousness could BE the intrinsic nature of matter', 'This avoids the hard problem: consciousness doesn\'t emerge from non-conscious matter because matter was never non-conscious'],
-      note: 'Gaining renewed academic interest as a serious metaphysical position.'
+      note: 'Gaining renewed academic interest as a serious metaphysical position.',
+      links: [
+        { label: 'SEP: Panpsychism', url: 'https://plato.stanford.edu/entries/panpsychism/' },
+        { label: 'Goff (2019) - Galileo\'s Error (book)', url: 'https://www.goodreads.com/book/show/44098178-galileo-s-error' },
+        { label: 'Wikipedia: Panpsychism', url: 'https://en.wikipedia.org/wiki/Panpsychism' },
+      ]
     }
   },
   {
@@ -598,7 +724,11 @@ const nodes = [
       philosophers: 'William James (1890), William Seager (1995), Chalmers (2016)',
       thesis: 'Even if electrons have micro-experiences, how do billions of micro-experiences combine to form the unified macro-experience of a human mind? This is the "combination problem" -- panpsychism\'s version of the hard problem.',
       premises: ['Subjects don\'t combine: your experience + my experience != a third experience', 'James: "Take a hundred sensations and bundle them... the hundred sensations remain just a hundred sensations"', 'No known mechanism explains experiential combination'],
-      consequence: 'The combination problem may be as hard as the hard problem it was meant to solve.'
+      consequence: 'The combination problem may be as hard as the hard problem it was meant to solve.',
+      links: [
+        { label: 'SEP: The Combination Problem', url: 'https://plato.stanford.edu/entries/panpsychism/#CombProb' },
+        { label: 'Chalmers (2016) - The Combination Problem for Panpsychism', url: 'https://consc.net/papers/combination.pdf' },
+      ]
     }
   },
   {
@@ -609,7 +739,10 @@ const nodes = [
       philosophers: 'Philip Goff (2017), Itay Shani (2015)',
       thesis: 'Instead of micro-experiences combining upward, the universe as a whole has a single cosmic consciousness that grounds all particular conscious experiences. Individual minds are aspects or "modes" of cosmic consciousness.',
       premises: ['Avoids the combination problem by starting from unity', 'Individual consciousnesses are decompositions, not combinations', 'Echoes Spinoza, Schelling, and Advaita Vedanta traditions'],
-      note: 'Critics see this as trading one mystery for another.'
+      note: 'Critics see this as trading one mystery for another.',
+      links: [
+        { label: 'Goff (2017) - Cosmopsychism paper', url: 'https://philpapers.org/rec/GOFCRF-2' },
+      ]
     }
   },
 
@@ -622,7 +755,12 @@ const nodes = [
       philosophers: 'Roger Penrose (1989, 1994), Stuart Hameroff (1998)',
       thesis: 'Consciousness arises from quantum computations in microtubules within neurons. Quantum superpositions in tubulin proteins undergo "objective reduction" (OR) -- a gravitationally-induced collapse of the wave function. This non-computable process is "orchestrated" by biological mechanisms, yielding conscious moments.',
       premises: ['P1 (Penrose): Human understanding involves non-computable processes (via Godel\'s theorem)', 'P2: Quantum gravity provides a source of non-computability', 'P3 (Hameroff): Microtubules in neurons can sustain quantum coherence', 'P4: Each OR event = a moment of proto-conscious experience'],
-      note: 'One of the most controversial theories; rejected by most neuroscientists.'
+      note: 'One of the most controversial theories; rejected by most neuroscientists.',
+      links: [
+        { label: 'Wikipedia: Orchestrated objective reduction', url: 'https://en.wikipedia.org/wiki/Orchestrated_objective_reduction' },
+        { label: 'Hameroff & Penrose (2014) - Consciousness in the universe', url: 'https://pubmed.ncbi.nlm.nih.gov/24070914/' },
+        { label: 'Penrose (1989) - The Emperor\'s New Mind (book)', url: 'https://en.wikipedia.org/wiki/The_Emperor%27s_New_Mind' },
+      ]
     }
   },
   {
@@ -633,6 +771,9 @@ const nodes = [
       philosophers: 'Max Tegmark (2000)',
       thesis: 'Quantum coherence in microtubules would decohere in ~10^-13 seconds at brain temperature -- far too fast to be relevant to neural processing (which operates on ~10^-3 second timescales). The brain is too warm, wet, and noisy for quantum computation.',
       premises: ['Thermal decoherence time in microtubules ~10^-13 s', 'Neural timescales ~10^-1 to 10^-3 s', 'Gap of ~10 orders of magnitude between quantum and neural timescales'],
+      links: [
+        { label: 'Tegmark (2000) - The importance of quantum decoherence', url: 'https://arxiv.org/abs/quant-ph/9907009' },
+      ]
     }
   },
   {
@@ -643,7 +784,10 @@ const nodes = [
       philosophers: 'Hameroff & Penrose (2014)',
       thesis: 'Recent discoveries of quantum effects in warm biological systems (photosynthesis, bird navigation, enzyme catalysis) suggest quantum coherence can be maintained in biological conditions longer than expected.',
       premises: ['Quantum coherence in photosynthetic complexes at room temperature', 'Quantum tunneling in enzyme reactions', 'Topological protection in microtubules might shield coherence'],
-      note: 'Whether these biological quantum effects are relevant to consciousness remains highly disputed.'
+      note: 'Whether these biological quantum effects are relevant to consciousness remains highly disputed.',
+      links: [
+        { label: 'Hameroff & Penrose (2014) - Reply to Tegmark', url: 'https://pubmed.ncbi.nlm.nih.gov/24070914/' },
+      ]
     }
   },
 
@@ -656,7 +800,11 @@ const nodes = [
       philosophers: 'Hilary Putnam (1967), Jerry Fodor (1974), early David Armstrong',
       thesis: 'Mental states are defined by their functional roles -- their causal relations to sensory inputs, behavioral outputs, and other mental states. Consciousness is multiply realizable: it can be implemented in neurons, silicon, or anything with the right functional organization.',
       premises: ['Mental states = functional states (defined by causal roles)', 'Pain = whatever plays the "pain role" (caused by damage, causes avoidance, etc.)', 'Substrate independence: what matters is the pattern, not the material'],
-      consequence: 'Strong AI is possible in principle: a computer with the right functional organization would be conscious.'
+      consequence: 'Strong AI is possible in principle: a computer with the right functional organization would be conscious.',
+      links: [
+        { label: 'SEP: Functionalism', url: 'https://plato.stanford.edu/entries/functionalism/' },
+        { label: 'Wikipedia: Functionalism (philosophy of mind)', url: 'https://en.wikipedia.org/wiki/Functionalism_(philosophy_of_mind)' },
+      ]
     }
   },
   {
@@ -667,7 +815,11 @@ const nodes = [
       philosophers: 'Ned Block (1978)',
       thesis: 'Imagine the entire population of China (1 billion+ people) arranged to simulate the functional organization of a brain, with each person playing the role of one neuron, communicating via radio. Would "China" be conscious? Intuitively, no -- yet it satisfies functionalist criteria.',
       premises: ['The China Brain has the right functional organization', 'Functionalism says functional organization is sufficient for consciousness', 'But the intuition that the China Brain is not conscious is very strong'],
-      consequence: 'Functionalism may be too liberal -- it attributes consciousness too widely.'
+      consequence: 'Functionalism may be too liberal -- it attributes consciousness too widely.',
+      links: [
+        { label: 'SEP: Block\'s China Brain', url: 'https://plato.stanford.edu/entries/functionalism/#ChinBrai' },
+        { label: 'Wikipedia: China brain', url: 'https://en.wikipedia.org/wiki/China_brain' },
+      ]
     }
   },
   {
@@ -678,6 +830,10 @@ const nodes = [
       philosophers: 'Ned Block (1980), inverted spectrum: Locke (1689), Shoemaker (1982)',
       thesis: 'Two beings could be functionally identical yet one has no qualia (absent qualia) or different qualia (inverted qualia). This shows functional organization does not determine phenomenal properties.',
       premises: ['Inverted spectrum: your "red" experience could be my "green" experience, with identical functional roles', 'Absent qualia: a functional duplicate could lack experience entirely', 'If these are possible, functionalism fails to capture phenomenal consciousness'],
+      links: [
+        { label: 'SEP: Absent Qualia', url: 'https://plato.stanford.edu/entries/functionalism/#AbseQual' },
+        { label: 'Wikipedia: Inverted spectrum', url: 'https://en.wikipedia.org/wiki/Inverted_spectrum' },
+      ]
     }
   },
 
@@ -690,7 +846,11 @@ const nodes = [
       philosophers: 'U.T. Place (1956), J.J.C. Smart (1959), David Armstrong (1968)',
       thesis: 'Conscious states are identical to specific brain states. Pain IS C-fiber firing. This is a contingent empirical identity, like "water = H2O" or "lightning = electrical discharge."',
       premises: ['Identity is the simplest explanation of mind-brain correlations', 'No need for mysterious extra properties', 'Identities are discovered empirically, not a priori'],
-      note: 'The original physicalist theory of mind; largely supplanted by functionalism due to multiple realizability concerns.'
+      note: 'The original physicalist theory of mind; largely supplanted by functionalism due to multiple realizability concerns.',
+      links: [
+        { label: 'SEP: The Identity Theory of Mind', url: 'https://plato.stanford.edu/entries/mind-identity/' },
+        { label: 'Wikipedia: Type physicalism', url: 'https://en.wikipedia.org/wiki/Type_physicalism' },
+      ]
     }
   },
   {
@@ -701,7 +861,10 @@ const nodes = [
       philosophers: 'Hilary Putnam (1967)',
       thesis: 'Pain can be realized in different physical substrates (human neurons, octopus neurons, hypothetical alien biology). If pain = C-fiber firing, then beings without C-fibers cannot feel pain. But surely they can.',
       premises: ['Octopi likely feel pain but have very different neural architecture', 'Alien life forms could have pain without carbon-based neurons', 'Therefore pain cannot be identical to any specific physical state type'],
-      consequence: 'This objection drove the shift from identity theory to functionalism.'
+      consequence: 'This objection drove the shift from identity theory to functionalism.',
+      links: [
+        { label: 'SEP: Multiple Realizability', url: 'https://plato.stanford.edu/entries/multiple-realizability/' },
+      ]
     }
   },
 
@@ -714,7 +877,11 @@ const nodes = [
       philosophers: 'David Chalmers (1996), broadly',
       thesis: 'The world has one kind of substance (physical) but two kinds of properties: physical properties and phenomenal (experiential) properties. Consciousness is a fundamental feature of reality that supervenes on but is not reducible to physical properties.',
       premises: ['The zombie argument shows consciousness is not entailed by physical properties', 'But we need not posit a separate substance (avoiding Cartesian problems)', 'Psychophysical laws link physical to phenomenal properties'],
-      consequence: 'Requires fundamental psychophysical laws of nature -- a significant addition to physics.'
+      consequence: 'Requires fundamental psychophysical laws of nature -- a significant addition to physics.',
+      links: [
+        { label: 'SEP: Property Dualism', url: 'https://plato.stanford.edu/entries/dualism/#ProDua' },
+        { label: 'Wikipedia: Property dualism', url: 'https://en.wikipedia.org/wiki/Property_dualism' },
+      ]
     }
   },
   {
@@ -725,7 +892,10 @@ const nodes = [
       philosophers: 'T.H. Huxley (1874), Jackson (early work)',
       thesis: 'If phenomenal properties are non-physical, how do they causally interact with the physical world? If they don\'t, consciousness is epiphenomenal (causally inert) -- your pain doesn\'t actually cause your withdrawal behavior. This seems deeply implausible.',
       premises: ['Physical world is causally closed (every physical event has a sufficient physical cause)', 'Non-physical properties cannot causally affect physical events without violating closure', 'Therefore phenomenal properties are causally inert -- mere "passengers"'],
-      consequence: 'If consciousness does nothing, natural selection could not have selected for it, and your belief that you are conscious is not caused by your consciousness.'
+      consequence: 'If consciousness does nothing, natural selection could not have selected for it, and your belief that you are conscious is not caused by your consciousness.',
+      links: [
+        { label: 'SEP: Epiphenomenalism', url: 'https://plato.stanford.edu/entries/epiphenomenalism/' },
+      ]
     }
   },
 
@@ -738,7 +908,10 @@ const nodes = [
       philosophers: 'Brian Loar (1990), Katalin Balog (2012), Michael Tye (2009)',
       thesis: 'The explanatory gap is real but reflects a gap in our CONCEPTS, not in reality. We have two types of concepts for the same physical state: physical concepts ("C-fiber firing") and phenomenal concepts ("this pain feeling"). These are cognitively independent but refer to the same property.',
       premises: ['Phenomenal concepts are recognitional/demonstrative ("this quality")', 'Physical concepts are theoretical/descriptive', 'The gap between them is conceptual, not ontological', 'Compare: "Hesperus" and "Phosphorus" seem different but are the same object (Venus)'],
-      consequence: 'Saves physicalism while acknowledging the hard problem intuitions are real (but epistemic, not metaphysical).'
+      consequence: 'Saves physicalism while acknowledging the hard problem intuitions are real (but epistemic, not metaphysical).',
+      links: [
+        { label: 'SEP: Phenomenal Concepts', url: 'https://plato.stanford.edu/entries/consciousness/#PheCon' },
+      ]
     }
   },
   {
@@ -749,6 +922,9 @@ const nodes = [
       philosophers: 'David Chalmers (2007)',
       thesis: 'The phenomenal concept strategy must explain why phenomenal concepts have their special features (direct, recognitional, etc.) using only physical/functional resources. But any physical/functional account of phenomenal concepts could apply to a zombie -- who would ALSO have "phenomenal concepts" but no experience. So the strategy cannot account for the crucial difference.',
       premises: ['Any physical account of phenomenal concepts applies equally to zombie-world', 'In zombie-world, "phenomenal concepts" are empty -- they don\'t refer to real experience', 'So the physical story alone cannot explain why OUR phenomenal concepts succeed in referring'],
+      links: [
+        { label: 'Chalmers (2007) - Phenomenal Concepts and the Explanatory Gap', url: 'https://consc.net/papers/pceg.pdf' },
+      ]
     }
   },
 
@@ -761,7 +937,12 @@ const nodes = [
       philosophers: 'Francisco Varela (1996), Evan Thompson (2007)',
       thesis: 'First-person phenomenological investigation (disciplined introspection, drawing on Husserl\'s methods) should be integrated with third-person neuroscience. Neither alone is sufficient. Consciousness is best understood through mutual constraints between phenomenological reports and neural data.',
       premises: ['Phenomenology provides precise descriptions of experience structure', 'Neuroscience provides mechanistic correlates', 'Together they create "mutual constraints" that neither could achieve alone', 'Rooted in the enactivist tradition: mind is embodied and enacted, not computed'],
-      note: 'Influential in contemplative neuroscience and mindfulness research.'
+      note: 'Influential in contemplative neuroscience and mindfulness research.',
+      links: [
+        { label: 'SEP: Neurophenomenology', url: 'https://plato.stanford.edu/entries/consciousness-neuroscience/#NeurPhen' },
+        { label: 'Wikipedia: Neurophenomenology', url: 'https://en.wikipedia.org/wiki/Neurophenomenology' },
+        { label: 'Thompson (2007) - Mind in Life (book)', url: 'https://www.goodreads.com/book/show/1069165.Mind_in_Life' },
+      ]
     }
   },
 
@@ -775,7 +956,10 @@ const nodes = [
       thesis: 'The unity of consciousness depends on the bandwidth (speed and volume) of information integration between parts of a system. Two people talking exchange ~40 bits/sec through speech; neurons in a brain exchange millions of bits/sec through synapses. This difference in integration bandwidth is why a conversation generates new ideas but not a unified consciousness -- the information flow between the two brains is a trickle compared to the flood within each brain.',
       premises: ['Internal neural bandwidth: ~100 trillion synapses, millisecond timescales', 'Speech bandwidth: ~40 bits/sec, second-level timescales', 'IIT predicts: the "maximum of integrated information" sits at the boundary of each individual brain because intra-brain integration vastly exceeds inter-brain integration', 'A conversation creates emergent thoughts but not a merged experiential subject'],
       example: 'Two people discussing a shared experience generate insights neither could have alone -- yet the experience of those insights is had separately by each brain, because the integration bottleneck keeps each Phi-maximum within each skull.',
-      note: 'This raises a key question: at what bandwidth would two connected brains begin to merge into one consciousness?'
+      note: 'This raises a key question: at what bandwidth would two connected brains begin to merge into one consciousness?',
+      links: [
+        { label: 'Tononi & Koch (2015) - Consciousness: here, there and everywhere?', url: 'https://pubmed.ncbi.nlm.nih.gov/26403834/' },
+      ]
     }
   },
   {
@@ -786,7 +970,11 @@ const nodes = [
       philosophers: 'Crick & Koch (1990), Wolf Singer (1999), Andreas Engel',
       thesis: 'How does the brain bind disparate features (color, shape, motion, sound, emotion) into a unified conscious experience? A leading answer: temporal synchrony. Neurons that fire together in gamma-band oscillations (~30-70Hz) bind their representations into a single percept. Speed of synchronization is the mechanism of experiential unity.',
       premises: ['Different brain areas process different features (color in V4, motion in V5, etc.)', 'These features are experienced as a unified whole, not as separate streams', 'Gamma-band synchrony (~40Hz) correlates with conscious binding', 'Disrupting synchrony (e.g., anesthesia) disrupts conscious unity'],
-      example: 'Seeing a red ball: V4 processes color, V5 processes motion, temporal cortex processes shape. Gamma synchrony binds these into one experience of "a red ball moving."'
+      example: 'Seeing a red ball: V4 processes color, V5 processes motion, temporal cortex processes shape. Gamma synchrony binds these into one experience of "a red ball moving."',
+      links: [
+        { label: 'SEP: The Binding Problem', url: 'https://plato.stanford.edu/entries/consciousness-neuroscience/#BindProb' },
+        { label: 'Wikipedia: Binding problem', url: 'https://en.wikipedia.org/wiki/Binding_problem' },
+      ]
     }
   },
   {
@@ -797,7 +985,11 @@ const nodes = [
       philosophers: 'Roger Sperry (1960s), Michael Gazzaniga (1967)',
       thesis: 'When the corpus callosum (~200 million fibers connecting the hemispheres) is severed, patients exhibit two apparently separate streams of consciousness. The left hemisphere can speak but the right cannot; each hemisphere can have different preferences, beliefs, and intentions. Cutting integration bandwidth literally splits conscious unity.',
       premises: ['Post-surgery: information presented to one visual field is unknown to the other hemisphere', 'The right hemisphere can act on information the left hemisphere (and the verbal "self") denies knowing', 'Each hemisphere appears to have its own conscious experience', 'This is the strongest natural evidence that integration bandwidth determines conscious unity'],
-      consequence: 'Directly supports the thesis that consciousness tracks integration bandwidth: reduce it enough, and one consciousness becomes two.'
+      consequence: 'Directly supports the thesis that consciousness tracks integration bandwidth: reduce it enough, and one consciousness becomes two.',
+      links: [
+        { label: 'Wikipedia: Split-brain', url: 'https://en.wikipedia.org/wiki/Split-brain' },
+        { label: 'Gazzaniga (2005) - Forty-five years of split-brain research', url: 'https://pubmed.ncbi.nlm.nih.gov/16050716/' },
+      ]
     }
   },
   {
@@ -808,7 +1000,10 @@ const nodes = [
       philosophers: 'Theoretical extrapolation from IIT and binding research',
       thesis: 'If two brains were connected by an artificial corpus callosum with increasing bandwidth, at what point would two consciousnesses merge into one? IIT predicts a phase transition: when inter-brain integration exceeds the minimum information partition within either brain, the Phi-maximum would shift to encompass both brains as a single conscious entity.',
       premises: ['Current brain-computer interfaces: very low bandwidth (~100 bits/min)', 'Corpus callosum: ~200 million fibers, massive bandwidth', 'Somewhere between those extremes, a threshold may exist', 'This is currently a thought experiment but advancing neurotechnology makes it increasingly relevant'],
-      note: 'This connects to the philosophical question of personal identity: if two brains merge, whose experience is it?'
+      note: 'This connects to the philosophical question of personal identity: if two brains merge, whose experience is it?',
+      links: [
+        { label: 'Rao et al. (2014) - BrainNet: A Multi-Person Brain-to-Brain Interface', url: 'https://arxiv.org/abs/1809.08632' },
+      ]
     }
   },
   {
@@ -831,7 +1026,11 @@ const nodes = [
       philosophers: 'Francis Crick & Christof Koch (1990, 2003)',
       thesis: 'The empirical project of finding the minimal neural mechanisms sufficient for any specific conscious experience. Theory-neutral starting point: find the correlates first, explain them later.',
       premises: ['NCC = minimal neuronal mechanisms jointly sufficient for a specific conscious percept', 'Key methods: contrastive analysis (seen vs unseen stimuli)', 'Candidate NCCs: 40Hz oscillations, prefrontal-parietal network, recurrent processing'],
-      note: 'The NCC project constrains theories but does not by itself adjudicate between them.'
+      note: 'The NCC project constrains theories but does not by itself adjudicate between them.',
+      links: [
+        { label: 'SEP: Neural Correlates of Consciousness', url: 'https://plato.stanford.edu/entries/consciousness-neuroscience/#NeurCorrCons' },
+        { label: 'Wikipedia: Neural correlates of consciousness', url: 'https://en.wikipedia.org/wiki/Neural_correlates_of_consciousness' },
+      ]
     }
   },
   {
@@ -842,7 +1041,10 @@ const nodes = [
       philosophers: 'General debate across all theories',
       thesis: 'Different theories give radically different answers. Functionalism/GWT: yes, if functionally organized correctly. IIT: depends on Phi (current AI architectures likely have very low Phi). Biological naturalism: no, requires biological substrate. Orch-OR: no, requires quantum processes in microtubules.',
       premises: ['Functionalism + GWT -> AI consciousness is possible in principle', 'IIT -> current feedforward networks likely have Phi near 0', 'Biological naturalism -> only biology can produce consciousness', 'No current consensus on whether LLMs are conscious'],
-      consequence: 'This question is becoming practically urgent as AI systems grow more sophisticated.'
+      consequence: 'This question is becoming practically urgent as AI systems grow more sophisticated.',
+      links: [
+        { label: 'Butlin et al. (2023) - Consciousness in AI: Insights from the Science of Consciousness', url: 'https://arxiv.org/abs/2308.08708' },
+      ]
     }
   },
   {
@@ -853,7 +1055,11 @@ const nodes = [
       philosophers: 'Ned Block (1995, 2007)',
       thesis: 'Access consciousness (information available for reasoning, reporting, behavior control) and phenomenal consciousness (subjective experience, "what it is like") are conceptually distinct and may come apart. A theory might explain one without explaining the other.',
       premises: ['Access consciousness: information is globally available to cognitive systems', 'Phenomenal consciousness: there is "something it is like" to be in the state', 'GWT primarily targets access consciousness', 'The overflow debate: is there more phenomenal consciousness than we can access?'],
-      consequence: 'Theories must specify which type of consciousness they address.'
+      consequence: 'Theories must specify which type of consciousness they address.',
+      links: [
+        { label: 'SEP: Access vs Phenomenal Consciousness', url: 'https://plato.stanford.edu/entries/consciousness/#AccPhe' },
+        { label: 'Block (1995) - On a confusion about a function of consciousness', url: 'https://www.nyu.edu/gsas/dept/philo/faculty/block/papers/1995_Function.pdf' },
+      ]
     }
   },
   {
@@ -864,7 +1070,11 @@ const nodes = [
       philosophers: 'Templeton Foundation project, Melloni et al. (2023)',
       thesis: 'Pre-registered adversarial collaborations are testing GWT and IIT head-to-head with neuroimaging experiments. Initial results (2023): both theories had some predictions confirmed and some disconfirmed.',
       premises: ['GWT predicted late prefrontal activation for consciousness -> partially confirmed', 'IIT predicted posterior cortex is sufficient -> partially confirmed', 'Both theories need revision based on results', 'Marks a shift toward empirical testing of consciousness theories'],
-      note: 'First large-scale empirical attempt to adjudicate between consciousness theories.'
+      note: 'First large-scale empirical attempt to adjudicate between consciousness theories.',
+      links: [
+        { label: 'Melloni et al. (2023) - Adversarial collaboration results', url: 'https://pubmed.ncbi.nlm.nih.gov/37524697/' },
+        { label: 'COGITATE project', url: 'https://www.arc-cogitate.com/' },
+      ]
     }
   },
 ];
@@ -1154,6 +1364,13 @@ function showPopup(nd) {
   if (d.thought_experiment) html += `<div class="section-label">Thought Experiment</div><div style="font-size:13px;color:#c9d1d9;">${d.thought_experiment}</div>`;
   if (d.dependency) html += `<div class="section-label">Dependency</div><div style="font-size:13px;color:#8b949e;">${d.dependency}</div>`;
   if (d.note) html += `<div class="note">${d.note}</div>`;
+  if (d.links && d.links.length) {
+    html += `<div class="section-label">Further Reading</div><div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;">`;
+    d.links.forEach(l => {
+      html += `<a href="${l.url}" target="_blank" rel="noopener" style="font-size:12px;color:#58a6ff;background:#0d1117;border:1px solid #30363d;padding:4px 10px;border-radius:6px;text-decoration:none;display:inline-block;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#58a6ff'" onmouseout="this.style.borderColor='#30363d'">${l.label}</a>`;
+    });
+    html += `</div>`;
+  }
   html += `<button class="read-btn" id="read-toggle-btn" data-node-id="${nd.id}" onclick="toggleRead('${nd.id}')" style="background:#21262d;color:#c9d1d9;">Loading...</button>`;
   document.getElementById('popup-content').innerHTML = html;
   document.getElementById('popup').style.display = 'block';
