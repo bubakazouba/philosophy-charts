@@ -765,6 +765,63 @@ const nodes = [
     }
   },
 
+  // ===== INTEGRATION BANDWIDTH / BINDING =====
+  {
+    id: 'bandwidth', type: 'theory', section: 'Integration Bandwidth',
+    label: 'Integration\nBandwidth\nThesis',
+    title: 'Integration Bandwidth: Speed of Integration as Key to Conscious Unity',
+    detail: {
+      philosophers: 'Giulio Tononi (implicit in IIT), various',
+      thesis: 'The unity of consciousness depends on the bandwidth (speed and volume) of information integration between parts of a system. Two people talking exchange ~40 bits/sec through speech; neurons in a brain exchange millions of bits/sec through synapses. This difference in integration bandwidth is why a conversation generates new ideas but not a unified consciousness -- the information flow between the two brains is a trickle compared to the flood within each brain.',
+      premises: ['Internal neural bandwidth: ~100 trillion synapses, millisecond timescales', 'Speech bandwidth: ~40 bits/sec, second-level timescales', 'IIT predicts: the "maximum of integrated information" sits at the boundary of each individual brain because intra-brain integration vastly exceeds inter-brain integration', 'A conversation creates emergent thoughts but not a merged experiential subject'],
+      example: 'Two people discussing a shared experience generate insights neither could have alone -- yet the experience of those insights is had separately by each brain, because the integration bottleneck keeps each Phi-maximum within each skull.',
+      note: 'This raises a key question: at what bandwidth would two connected brains begin to merge into one consciousness?'
+    }
+  },
+  {
+    id: 'binding', type: 'theory', section: 'Integration Bandwidth',
+    label: 'Neural Binding\nProblem',
+    title: 'The Binding Problem and Temporal Synchrony',
+    detail: {
+      philosophers: 'Crick & Koch (1990), Wolf Singer (1999), Andreas Engel',
+      thesis: 'How does the brain bind disparate features (color, shape, motion, sound, emotion) into a unified conscious experience? A leading answer: temporal synchrony. Neurons that fire together in gamma-band oscillations (~30-70Hz) bind their representations into a single percept. Speed of synchronization is the mechanism of experiential unity.',
+      premises: ['Different brain areas process different features (color in V4, motion in V5, etc.)', 'These features are experienced as a unified whole, not as separate streams', 'Gamma-band synchrony (~40Hz) correlates with conscious binding', 'Disrupting synchrony (e.g., anesthesia) disrupts conscious unity'],
+      example: 'Seeing a red ball: V4 processes color, V5 processes motion, temporal cortex processes shape. Gamma synchrony binds these into one experience of "a red ball moving."'
+    }
+  },
+  {
+    id: 'split_brain', type: 'premise', section: 'Integration Bandwidth',
+    label: 'Split-Brain\nEvidence',
+    title: 'Split-Brain Patients: Cutting Bandwidth Splits Consciousness',
+    detail: {
+      philosophers: 'Roger Sperry (1960s), Michael Gazzaniga (1967)',
+      thesis: 'When the corpus callosum (~200 million fibers connecting the hemispheres) is severed, patients exhibit two apparently separate streams of consciousness. The left hemisphere can speak but the right cannot; each hemisphere can have different preferences, beliefs, and intentions. Cutting integration bandwidth literally splits conscious unity.',
+      premises: ['Post-surgery: information presented to one visual field is unknown to the other hemisphere', 'The right hemisphere can act on information the left hemisphere (and the verbal "self") denies knowing', 'Each hemisphere appears to have its own conscious experience', 'This is the strongest natural evidence that integration bandwidth determines conscious unity'],
+      consequence: 'Directly supports the thesis that consciousness tracks integration bandwidth: reduce it enough, and one consciousness becomes two.'
+    }
+  },
+  {
+    id: 'bbi_merge', type: 'consequence', section: 'Integration Bandwidth',
+    label: 'Brain-to-Brain\nInterface\nQuestion',
+    title: 'Thought Experiment: At What Bandwidth Do Brains Merge?',
+    detail: {
+      philosophers: 'Theoretical extrapolation from IIT and binding research',
+      thesis: 'If two brains were connected by an artificial corpus callosum with increasing bandwidth, at what point would two consciousnesses merge into one? IIT predicts a phase transition: when inter-brain integration exceeds the minimum information partition within either brain, the Phi-maximum would shift to encompass both brains as a single conscious entity.',
+      premises: ['Current brain-computer interfaces: very low bandwidth (~100 bits/min)', 'Corpus callosum: ~200 million fibers, massive bandwidth', 'Somewhere between those extremes, a threshold may exist', 'This is currently a thought experiment but advancing neurotechnology makes it increasingly relevant'],
+      note: 'This connects to the philosophical question of personal identity: if two brains merge, whose experience is it?'
+    }
+  },
+  {
+    id: 'obj_bandwidth_notspeed', type: 'objection', section: 'Integration Bandwidth',
+    label: 'Speed Alone\nIs Not Enough',
+    title: 'Objection: Speed Without Integration Does Not Produce Consciousness',
+    detail: {
+      philosophers: 'General concern',
+      thesis: 'A very fast feedforward network (input -> output at light speed, no feedback) would not be conscious on most theories. Raw speed is necessary but not sufficient. What matters is speed of RECURRENT integration -- bidirectional influence between parts, not just fast throughput.',
+      premises: ['Feedforward networks lack recurrence (Lamme: no consciousness without feedback)', 'A fiber optic cable transmits billions of bits/sec but integrates nothing', 'Speed must be combined with the right topology (recurrent, integrated) to matter'],
+    }
+  },
+
   // ===== CONSEQUENCES / CROSS-CUTTING =====
   {
     id: 'ncc', type: 'consequence', section: 'Cross-Cutting',
@@ -888,6 +945,19 @@ const edges = [
   // Identity theory
   { source: 'obj_multiple_real', target: 'identity', label: 'objects to' },
   { source: 'obj_multiple_real', target: 'functionalism', label: 'motivates' },
+
+  // Integration Bandwidth / Binding
+  { source: 'bandwidth', target: 'iit', label: 'derived from' },
+  { source: 'split_brain', target: 'bandwidth', label: 'supports' },
+  { source: 'binding', target: 'bandwidth', label: 'mechanism of' },
+  { source: 'binding', target: 'rpt', label: 'related to' },
+  { source: 'binding', target: 'ncc', label: 'constrains' },
+  { source: 'bbi_merge', target: 'bandwidth', label: 'extrapolates' },
+  { source: 'bbi_merge', target: 'ai_consciousness', label: 'related to' },
+  { source: 'obj_bandwidth_notspeed', target: 'bandwidth', label: 'objects to' },
+  { source: 'obj_bandwidth_notspeed', target: 'rpt', label: 'supports' },
+  { source: 'split_brain', target: 'iit', label: 'supports' },
+  { source: 'obj_china_brain', target: 'bandwidth', label: 'explained by' },
 
   // Property dualism
   { source: 'zombie', target: 'prop_dualism', label: 'motivates' },
